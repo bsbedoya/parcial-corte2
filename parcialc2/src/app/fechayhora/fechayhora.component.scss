@@ -1,0 +1,31 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente si es necesario */
+    padding: 16px;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+  }
+  
+  ion-label {
+    font-size: 1.5rem; /* Tamaño del texto más grande */
+    font-weight: bold;
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 16px; /* Espaciado debajo del título */
+    color: #007bff; /* Azul moderno */
+  }
+  
+  ion-item {
+    width: 100%; /* Asegura que el calendario ocupe todo el ancho disponible */
+    max-width: 400px; /* Limita el ancho máximo */
+    background-color: #fff; /* Fondo blanco para el calendario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  }
+  
+  ion-datetime {
+    width: 100%; /* Asegura que el selector de fecha ocupe todo el ancho del contenedor */
+    padding: 8px;
+    font-size: 1rem;
+  }
