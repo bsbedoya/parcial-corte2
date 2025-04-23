@@ -1,10 +1,4 @@
-<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
-  <ion-label style="font-size: 1.2rem; font-weight: bold;">Registro de fecha y hora</ion-label>
-  <ion-item>
-    <ion-datetime
-      displayFormat="MM/DD/YYYY"
-      [(ngModel)]="date"
-      (ngModelChange)="dateChange.emit($event)">
-    </ion-datetime>
-  </ion-item>
-</div>
+<ion-item>
+  <ion-label>Date</ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="date" (ngModelChange)="dateChange.emit($event)"></ion-datetime>
+</ion-item>
