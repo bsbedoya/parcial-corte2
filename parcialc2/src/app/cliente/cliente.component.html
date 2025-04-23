@@ -1,0 +1,62 @@
+<ion-item>
+  <ion-label position="floating">Nombre</ion-label>
+  <ion-input
+    type="text"
+    [(ngModel)]="customerName"
+  ></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Apellido</ion-label>
+  <ion-input
+    type="text"
+    [(ngModel)]="customerLastName"
+  ></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Correo Electrónico</ion-label>
+  <ion-input
+    type="email"
+    [(ngModel)]="customerEmail"
+  ></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Teléfono</ion-label>
+  <ion-input
+    type="tel"
+    [(ngModel)]="customerPhone"
+  ></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Tipo de Cliente</ion-label>
+  <ion-select
+    [(ngModel)]="customerType"
+  >
+    <ion-select-option value="individual">Individual</ion-select-option>
+    <ion-select-option value="empresa">Empresa</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Intereses</ion-label>
+  <ion-select
+    multiple="true"
+    [(ngModel)]="customerInterests"
+  >
+    <ion-select-option value="tecnologia">Tecnología</ion-select-option>
+    <ion-select-option value="salud">Salud</ion-select-option>
+    <ion-select-option value="deportes">Deportes</ion-select-option>
+    <ion-select-option value="negocios">Negocios</ion-select-option>
+    <ion-select-option value="educacion">Educación</ion-select-option>
+    <ion-select-option value="gastronomia">Gastronomía</ion-select-option>
+    <ion-select-option value="finanzas">Finanzas</ion-select-option>
+    <ion-select-option value="fotografia">Fotografía</ion-select-option>
+    <ion-select-option value="cultura">Cultura</ion-select-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Comentarios</ion-label>
+  <ion-textarea
+    [(ngModel)]="customerComments"
+  ></ion-textarea>
+</ion-item>
